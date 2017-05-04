@@ -14,7 +14,7 @@ function forLoop(array) {
 
 function whileLoop(n) {
   while (n > 0) {
-    console.log(--countdown);
+    console.log(n--);
   }
   console.log('done');
 }
@@ -25,7 +25,8 @@ function doWhileLoop(array) {
   }
 
   do {
-    array.slice(0, array.length - 1);
+    array.pop();
+    //array.slice(0, array.length - 1);
   } while (array.length > 0 && maybeTrue());
   return false;
 }
